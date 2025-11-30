@@ -18,7 +18,7 @@ const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 
 let model = null;
 try {
- model = genAI.getGenerativeModel({ model: "gemini-pro" });
+ model = genAI.getGenerativeModel({ model: "gemini-1.5 flash" });
 } catch (err) {
   console.error("❌ Gemini Init Error:", err);
 }
